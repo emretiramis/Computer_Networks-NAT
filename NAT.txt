@@ -1,0 +1,28 @@
+COMPUTER NETWORKS-NAT
+
+NAT (Network Address Translation), bir ağdaki private IP adreslerini public IP adresine veya public IP adreslerini private IP adreslerine 
+çevirmek için kullanılan bir teknolojidir. NAT, IP adreslerinin yeniden yapılandırılmasına olanak tanır ve genellikle yönlendiriciler (router) 
+tarafından uygulanır. Bu teknoloji, ağ güvenliğini artırmak, IP adreslerini verimli bir şekilde kullanmak ve cihazların internete erişimini 
+sağlamak için kullanılır.
+
+NAT Nasıl Çalışır?
+Özel IP adresleri (ör. 192.168.x.x, 10.x.x.x, 172.16.x.x – 172.31.x.x) yerel ağ içinde kullanılır 
+ve internette doğrudan yönlendirilemez.Genel IP adresleri internette kullanılır ve yönlendiriciler, 
+NAT ile yerel ağdaki cihazların bu genel IP adresini paylaşmasını sağlar.NAT, yerel ağdaki bir cihazdan 
+(örneğin bir bilgisayar) gelen  veri paketinin kaynak IP adresini özel IP adresinden genel IP adresine çevirir.
+Aynı şekilde, internetten gelen veri paketlerinin hedef IP adresi genel IP adresidir, ancak NAT bu adresi özel 
+IP adresine çevirerek veriyi doğru cihaza iletir.NAT, yönlendiricide bir bağlantı tablosu tutar. Bu tablo, hangi 
+özel IP adresinin ve port numarasının hangi genel IP adresi ve port numarasıyla eşleştiğini saklar.
+
+NAT Türleri
+1)Static NAT (Statik NAT)
+Bir özel IP adresi, sabit bir genel IP adresine çevrilir. Bu tür, genellikle bir cihazın (örneğin bir sunucunun) 
+internette sabit bir IP adresiyle erişilebilir olmasını sağlamak için kullanılır.
+
+2)Dynamic NAT (Dinamik NAT)
+Yönlendirici, özel IP adreslerini dinamik olarak kullanılabilir bir genel IP adresi havuzundan çevirir.Bu yöntem, sınırlı 
+sayıda genel IP adresinin birden fazla cihaz tarafından paylaşılmasını sağlar.
+
+3)PAT (Port Address Translation)
+Birden fazla özel IP adresi, aynı genel IP adresini paylaşır, ancak her cihaz için farklı port numaraları kullanılır.
+En yaygın kullanılan NAT türüdür, çünkü internet servis sağlayıcıları (ISP) genellikle her müşteri için tek bir genel IP adresi sağlar.
